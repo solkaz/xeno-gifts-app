@@ -2,7 +2,7 @@ module FriendshipColumn exposing (friendshipColumn)
 
 import Character exposing (Character(..))
 import Html exposing (br, text)
-import Html.Attributes exposing (style)
+import Html.Attributes exposing (class, style)
 import Item exposing (Item)
 import Table
 
@@ -53,10 +53,10 @@ friendColumnAttrs character =
 modifierCellColor : Int -> String
 modifierCellColor modifier =
     if modifier < 0 then
-        "red"
+        "has-background-danger-light"
 
     else
-        "green"
+        "has-background-success-light"
 
 
 modifierToHearts : Int -> String
@@ -81,8 +81,8 @@ modifierToHearts modifier =
 viewFriendship : Int -> Table.HtmlDetails msg
 viewFriendship modifier =
     Table.HtmlDetails
-        [ style "background-color" (modifierCellColor modifier)
-        , style "text-align" "center"
+        [ class (modifierCellColor modifier)
+        , style "vertical-align" "middle"
         ]
         [ text (String.fromInt modifier)
         , br [] []

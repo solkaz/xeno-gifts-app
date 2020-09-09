@@ -1,7 +1,7 @@
 module ItemNameColumn exposing (itemNameColumn)
 
 import Html exposing (a, text)
-import Html.Attributes exposing (href)
+import Html.Attributes exposing (href, style)
 import Item exposing (Item)
 import String exposing (append, map)
 import Table
@@ -32,6 +32,9 @@ itemNameColumn =
 
 viewName : String -> Table.HtmlDetails msg
 viewName name =
-    Table.HtmlDetails []
-        [ a [ href (makeWikiLink name) ] [ text name ]
+    Table.HtmlDetails
+        [ style "vertical-align" "middle" ]
+        [ a
+            [ href (makeWikiLink name) ]
+            [ text name ]
         ]
