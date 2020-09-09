@@ -27,12 +27,12 @@ config =
             , locationColumn
             , itemTypeColumn
             , friendshipColumn Shulk
-            , friendshipColumn Fiora
-            , friendshipColumn Dunban
             , friendshipColumn Reyn
+            , friendshipColumn Fiora
             , friendshipColumn Sharla
-            , friendshipColumn Riki
+            , friendshipColumn Dunban
             , friendshipColumn Melia
+            , friendshipColumn Riki
             ]
         , customizations =
             { tableAttrs = [ attribute "class" "table" ]
