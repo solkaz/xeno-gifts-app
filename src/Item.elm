@@ -115,7 +115,7 @@ items =
     , Item "Blue Gear Shard" SatoriMarsh Part 6 -6 18 2 -6 -2 4
     , Item "Pauper's Cup" SatoriMarsh Strange 24 4 4 6 -2 -8 6
     , Item "Cute Parsnip" SatoriMarsh Vegetable -6 20 -16 4 2 8 -2
-    , Item "Merry Coronoation" SatoriMarsh Flower -4 4 -2 -2 8 4 4
+    , Item "Merry Coronation" SatoriMarsh Flower -4 4 -2 -2 8 4 4
     , Item "Venom Platypus" SatoriMarsh Animal -4 6 2 10 -2 -10 18
     , Item "Lemon Stone" SatoriMarsh Nature -4 -6 14 4 12 -2 -6
     , Item "Rumble Part" SatoriMarsh Part 8 -4 6 6 2 4 -6
