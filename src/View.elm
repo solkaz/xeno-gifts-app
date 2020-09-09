@@ -1,7 +1,7 @@
 module View exposing (view)
 
 import Browser
-import Html exposing (div, h1, input, section, text)
+import Html exposing (div, footer, h1, input, p, section, text)
 import Html.Attributes exposing (class, placeholder, type_)
 import Html.Events exposing (onInput)
 import Item exposing (Item)
@@ -29,7 +29,8 @@ view { items, tableState, query } =
     , body =
         [ section
             [ class "section" ]
-            [ div [ class "container" ]
+            [ div
+                [ class "container" ]
                 [ h1
                     [ class "title", class "has-text-centered" ]
                     [ text "XenoGifts" ]
@@ -42,6 +43,12 @@ view { items, tableState, query } =
                     []
                 , ItemTable.view tableState matchedItems
                 ]
+            ]
+        , footer
+            [ class "footer" ]
+            [ div
+                [ class "container", class "has-text-centered" ]
+                [ p [] [ text "By Jeff Held" ] ]
             ]
         ]
     }
