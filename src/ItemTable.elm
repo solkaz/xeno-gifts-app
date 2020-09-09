@@ -3,7 +3,7 @@ module ItemTable exposing (view)
 import Character exposing (Character(..))
 import FriendshipColumn exposing (friendshipColumn)
 import Html exposing (Html)
-import Html.Attributes exposing (attribute)
+import Html.Attributes exposing (class)
 import Item exposing (Item)
 import ItemNameColumn exposing (itemNameColumn)
 import ItemTypeColumn exposing (itemTypeColumn)
@@ -35,7 +35,7 @@ config =
             , friendshipColumn Riki
             ]
         , customizations =
-            { tableAttrs = [ attribute "class" "table" ]
+            { tableAttrs = [ class "table", class "is-fullwidth", class "is-bordered" ]
             , caption = Table.defaultCustomizations.caption
             , tfoot = Table.defaultCustomizations.tfoot
             , tbodyAttrs = Table.defaultCustomizations.tbodyAttrs
