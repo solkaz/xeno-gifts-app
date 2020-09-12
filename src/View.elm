@@ -1,13 +1,13 @@
 module View exposing (view)
 
 import Browser
-import Html exposing (div, footer, h1, input, p, section, text)
-import Html.Attributes exposing (class, placeholder, type_)
-import Html.Events exposing (onInput)
+import Html exposing (div, footer, h1, p, section, text)
+import Html.Attributes exposing (class)
 import Item exposing (Item)
 import ItemTable
 import Model exposing (Model)
 import Msg exposing (Msg)
+import SearchInput
 
 
 view : Model -> Browser.Document Msg
@@ -34,13 +34,7 @@ view { items, tableState, query } =
                 [ h1
                     [ class "title", class "has-text-centered" ]
                     [ text "XenoGifts" ]
-                , input
-                    [ class "input"
-                    , placeholder "Item name"
-                    , onInput Msg.SetQuery
-                    , type_ "search"
-                    ]
-                    []
+                , SearchInput.view
                 , ItemTable.view tableState matchedItems
                 ]
             ]
