@@ -32,7 +32,7 @@ view { items, tableState, query } =
             [ div
                 [ class "container" ]
                 [ h1
-                    [ class "title", class "has-text-centered" ]
+                    [ class "title has-text-centered" ]
                     [ text "XenoGifts" ]
                 , SearchInput.view
                 , ItemTable.view tableState matchedItems
@@ -41,7 +41,7 @@ view { items, tableState, query } =
         , footer
             [ class "footer" ]
             [ div
-                [ class "container", class "has-text-centered" ]
+                [ class "container has-text-centered" ]
                 [ p [] [ text "By Jeff Held" ] ]
             ]
         ]

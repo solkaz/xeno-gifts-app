@@ -35,7 +35,7 @@ config =
             , friendshipColumn Riki
             ]
         , customizations =
-            { tableAttrs = [ class "table", class "is-fullwidth", class "is-bordered", class "has-text-centered" ]
+            { tableAttrs = [ class "table is-fullwidth is-bordered has-text-centered" ]
             , caption = Table.defaultCustomizations.caption
             , tfoot = Table.defaultCustomizations.tfoot
             , tbodyAttrs = Table.defaultCustomizations.tbodyAttrs
