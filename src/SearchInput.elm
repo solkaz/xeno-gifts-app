@@ -9,7 +9,7 @@ import Msg exposing (Msg)
 view : Html.Html Msg
 view =
     input
-        [ class "input"
+        [ class "input mb-4"
         , placeholder "Item name"
         , onInput Msg.SetQuery
         , type_ "search"
