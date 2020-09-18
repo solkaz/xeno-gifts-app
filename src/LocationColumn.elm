@@ -12,7 +12,7 @@ locationColumn =
     Table.veryCustomColumn
         { name = "Location"
         , sorter = Table.increasingOrDecreasingBy (.location >> locationSortingRank)
-        , viewData = viewLocation << .location
+        , viewData = .location >> viewLocation
         }
 
 

@@ -3,30 +3,29 @@ module ItemNameColumn exposing (itemNameColumn)
 import Html exposing (a, text)
 import Html.Attributes exposing (href, style)
 import Item exposing (Item)
-import String exposing (append, map)
 import Table
 
 
 makeWikiLink : String -> String
 makeWikiLink name =
-    map
-        (\c ->
-            if c == ' ' then
+    String.map
+        (\char ->
+            if char == ' ' then
                 '_'
 
             else
-                c
+                char
         )
         name
-        |> append "https://xenoblade.wikia.com/"
+        |> String.append "https://xenoblade.wikia.com/"
 
 
 itemNameColumn : Table.Column Item a
 itemNameColumn =
     Table.veryCustomColumn
         { name = "Name"
-        , viewData = viewName << .name
         , sorter = Table.increasingOrDecreasingBy .name
+        , viewData = .name >> viewName
         }
 
 
@@ -35,6 +34,6 @@ viewName name =
     Table.HtmlDetails
         [ style "vertical-align" "middle" ]
         [ a
-            [ href (makeWikiLink name) ]
+            [ makeWikiLink name |> href ]
             [ text name ]
         ]

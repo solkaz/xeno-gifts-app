@@ -11,8 +11,8 @@ itemTypeColumn : Table.Column Item a
 itemTypeColumn =
     Table.veryCustomColumn
         { name = "Item Type"
-        , viewData = viewType << .itemType
         , sorter = Table.increasingOrDecreasingBy (.itemType >> itemTypeToString)
+        , viewData = .itemType >> viewType
         }
 
 

@@ -13,17 +13,18 @@ import SearchInput
 view : Model -> Browser.Document Msg
 view { items, tableState, query } =
     let
-        lowerQuery : String
-        lowerQuery =
-            String.toLower query
-
         matchedItems : List Item
         matchedItems =
-            if String.isEmpty lowerQuery then
+            if String.isEmpty query then
                 items
 
             else
-                List.filter (String.contains lowerQuery << String.toLower << .name) items
+                List.filter
+                    (.name
+                        >> String.toLower
+                        >> String.contains (String.toLower query)
+                    )
+                    items
     in
     { title = "XenoGifts"
     , body =
