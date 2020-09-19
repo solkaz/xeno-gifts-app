@@ -1,19 +1,16 @@
 {
-  "name": "@gungeondex/xenogifts",
+  "name": "xenogifts",
   "version": "1.0.0",
-  "description": "This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Xenoblade Chronicles 1 collectables viewer",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "elm-app build",
+    "start": "elm-app start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
+  "author": "Jeff Held",
+  "license": "MIT",
   "devDependencies": {
     "bulma": "^0.9.0"
-  }
+  },
+  "repository": "https://github.com/solkaz/xenogifts.git"
 }
