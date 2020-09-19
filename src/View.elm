@@ -1,12 +1,13 @@
 module View exposing (view)
 
 import Browser
-import Html exposing (div, footer, h1, p, section, text)
+import Html exposing (div, h1, section, text)
 import Html.Attributes exposing (class)
 import Item exposing (Item)
 import ItemTable
 import Model exposing (Model)
 import Msg exposing (Msg)
+import PageFooter
 import SearchInput
 
 
@@ -39,11 +40,6 @@ view { items, tableState, query } =
                 , ItemTable.view tableState matchedItems
                 ]
             ]
-        , footer
-            [ class "footer" ]
-            [ div
-                [ class "container has-text-centered" ]
-                [ p [] [ text "By Jeff Held" ] ]
-            ]
+        , PageFooter.view
         ]
     }
