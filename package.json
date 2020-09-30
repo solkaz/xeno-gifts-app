@@ -1,5 +1,5 @@
 {
-  "name": "xenogifts",
+  "name": "xeno-gifts-app",
   "version": "1.0.0",
   "description": "Xenoblade Chronicles 1 collectables viewer",
   "private": true,
@@ -12,5 +12,5 @@
   "devDependencies": {
     "bulma": "^0.9.0"
   },
-  "repository": "https://github.com/solkaz/xenogifts.git"
+  "repository": "https://github.com/solkaz/xeno-gifts-app.git"
 }
