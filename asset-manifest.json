@@ -1,7 +1,7 @@
 {
   "main.css": "/xeno-gifts-app/static/css/main.cbc5fb94.chunk.css",
-  "main.js": "/xeno-gifts-app/static/js/main.2eba0067.chunk.js",
-  "main.js.map": "/xeno-gifts-app/static/js/main.2eba0067.chunk.js.map",
+  "main.js": "/xeno-gifts-app/static/js/main.fbbd9fa9.chunk.js",
+  "main.js.map": "/xeno-gifts-app/static/js/main.fbbd9fa9.chunk.js.map",
   "runtime~main.js": "/xeno-gifts-app/static/js/runtime~main.ff829683.js",
   "runtime~main.js.map": "/xeno-gifts-app/static/js/runtime~main.ff829683.js.map",
   "vendors~main.css": "/xeno-gifts-app/static/css/vendors~main.0553ccc1.chunk.css",
@@ -12,5 +12,5 @@
   "index.html": "/xeno-gifts-app/index.html",
   "logo.svg": "/xeno-gifts-app/logo.svg",
   "manifest.json": "/xeno-gifts-app/manifest.json",
-  "precache-manifest.5cec5fd7aac8c7b44d6006fd3d975045.js": "/xeno-gifts-app/precache-manifest.5cec5fd7aac8c7b44d6006fd3d975045.js"
+  "precache-manifest.21f96558cfee4ca65758089085541143.js": "/xeno-gifts-app/precache-manifest.21f96558cfee4ca65758089085541143.js"
 }
