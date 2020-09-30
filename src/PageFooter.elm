@@ -20,7 +20,7 @@ view =
                 []
             , p
                 []
-                [ a [ href "https://github.com/solkaz/xenogifts" ] [ text "Source Code" ]
+                [ a [ href "https://github.com/solkaz/xeno-gifts-app" ] [ text "Source Code" ]
                 , text " by "
                 , a [ href "https://github.com/solkaz" ] [ text "Jeff Held" ]
                 ]
