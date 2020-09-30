@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.27860231d1f19d5a0858e68f4ee259bd.js"
+  "/xeno-gifts-app/precache-manifest.5cec5fd7aac8c7b44d6006fd3d975045.js"
 );
 
 workbox.core.skipWaiting();
